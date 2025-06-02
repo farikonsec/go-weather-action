@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	resp, err := http.Get("https://wttr.in/London?format=3")
+	resp, err := http.Get("https://wttr.in/London?format=3&u")
 	if err != nil {
 		fmt.Println("Error fetching weather:", err)
 		return
